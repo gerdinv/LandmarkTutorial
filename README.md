@@ -2,5 +2,4 @@
 
 First SwiftUI App: Followed Apple's Tutorial.
 
-![alt text](https://gyazo.com/fde98b19688b33b2a6fb4e5bb040c5ee/to/img.png)
-
+![image](https://user-images.githubusercontent.com/56232769/144703275-55cd56f2-323c-4c9a-8c03-51ef0fda7885.jpeg)
