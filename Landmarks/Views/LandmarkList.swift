@@ -9,16 +9,24 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        LazyVStack {
-            ForEach(landmarks) { landmark in
-                LandmarkRow(landmark: landmark)
-            }
-        }
         
-//        List(landmarks, id: \.id) { landmark in
-//                    LandmarkRow(landmark: landmark)
-//        }
-
+        NavigationView {
+            LazyVStack {
+                ForEach(landmarks) { landmark in
+                    NavigationLink {
+                        LandmarkDetail()
+                    } label: {
+                        LandmarkRow(landmark: landmark)
+                        Text(">")
+                            .foregroundColor(.secondary)
+                            .padding(.trailing, 10)
+                    }
+                }.foregroundColor(.primary)
+            }
+            .padding(.top, 100)
+            .padding(.leading, 5)
+            .navigationTitle("Landmarks")
+        }
     }
 }
 
